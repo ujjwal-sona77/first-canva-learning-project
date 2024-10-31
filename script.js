@@ -90,6 +90,10 @@ function startAnimation() {
 
 preloadImages();
 
+window.addEventListener('resize', () => {
+    loadImage(Math.floor(frames.cureentIndex));
+});
+
 // Initialize Lenis
 const lenis = new Lenis();
 
